@@ -1,0 +1,23 @@
+image: node:latest
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - npm install -g http-server
+    - http-server Portfolio/myPortfolio -p $PORT -d false
+
+deploy:
+  stage: deploy
+  script:
+    - apt-get update -qy
+    - apt-get install -y openssh-client
+    - 'which ssh-agent || ( apt-get install -y openssh-client )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - scp -r Portfolio/myPortfolio/* $SSH_USERNAME@$SSH_HOST:$DEPLOY_PATH
+  only:
+    - master
