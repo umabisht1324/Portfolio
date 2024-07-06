@@ -1,0 +1,81 @@
+/* src/components/Home.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgb(46, 38, 38);
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 50px;
+}
+
+.hero {
+  text-align: center;
+}
+
+.Home p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+  font-size: 35px;
+  animation: fadein 1s forwards;
+}
+
+.Home p.delay {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Home {
+    font-size: 40px;
+  }
+
+  .Home p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Home {
+    font-size: 30px;
+  }
+
+  .Home p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Home {
+    font-size: 25px;
+    padding: 1rem;
+  }
+
+  .Home p {
+    font-size: 20px;
+  }
+}

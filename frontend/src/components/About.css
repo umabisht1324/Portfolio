@@ -1,0 +1,14 @@
+/* src/components/About.css */
+.About {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.About h2 {
+  font-size: 2.5em;
+}
+
+.About p {
+  font-size: 1.2em;
+  margin: 20px 0;
+}

@@ -1,0 +1,49 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(46, 38, 38);
+  color: #333;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+main.content {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background-color: rgb(46, 38, 38);
+  transition: all 0.3s ease-in-out;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+@media (max-width: 1024px) {
+  main.content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  main.content {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  main.content {
+    padding: 10px;
+  }
+}

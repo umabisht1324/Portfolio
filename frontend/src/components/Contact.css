@@ -1,0 +1,122 @@
+/* src/components/Contact.css */
+
+body {
+  background-color: rgb(46, 38, 38);
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ContactForm {
+  text-align: center;
+  color:rgb(46, 38, 38);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ContactForm h2 {
+  font-size: 2.5em; /* Adjusted for better scaling */
+  color: white;
+  margin-bottom: 30px;
+}
+
+.contact-form-container {
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 600px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-container label {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  color:brown
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1em;
+}
+
+.contact-form-container button {
+  padding: 10px 20px;
+  background: rgb(46, 38, 38);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.contact-form-container button:hover {
+  background: rgb(46, 38, 38);
+}
+
+.contact-form-container p {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color:rgb(46, 38, 38);
+}
+
+@media (max-width: 1024px) {
+  .ContactForm {
+    font-size: 1.5em;
+  }
+
+  .contact-form-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ContactForm {
+    font-size: 1.2em;
+  }
+
+  .contact-form-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ContactForm {
+    font-size: 1em;
+  }
+
+  .contact-form-container {
+    width: 95%;
+  }
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}

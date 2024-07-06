@@ -1,0 +1,66 @@
+/* src/components/Achievements.css */
+.Achievements {
+  text-align: center;
+}
+
+.Achievements h2 {
+  font-size: 2.5em; /* Adjusted for better scaling */
+  color: white;
+  margin-bottom: 20px;
+}
+
+.Achievements #a1, #a2 {
+  list-style-type: none;
+  padding-left: 20px;
+  text-align: center;
+  display: inline-block;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.3s ease-in-out;
+  color: brown;
+  margin: 20px;
+  font-size: 1.5em; /* Adjusted for better scaling */
+}
+
+.Achievements #a1:hover, .Achievements #a2:hover {
+  transform: scale(1.05);
+}
+
+.Achievements ul li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .Achievements h2 {
+    font-size: 2em; /* Adjusted for better scaling */
+  }
+
+  .Achievements #a1, .Achievements #a2 {
+    font-size: 1.2em; /* Adjusted for better scaling */
+    margin: 15px; /* Adjusted for better spacing */
+  }
+}
+
+@media (max-width: 768px) {
+  .Achievements h2 {
+    font-size: 1.5em; /* Adjusted for better scaling */
+  }
+
+  .Achievements #a1, .Achievements #a2 {
+    font-size: 1em; /* Adjusted for better scaling */
+    margin: 10px; /* Adjusted for better spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .Achievements h2 {
+    font-size: 1.2em; /* Adjusted for better scaling */
+  }
+
+  .Achievements #a1, .Achievements #a2 {
+    font-size: 0.9em; /* Adjusted for better scaling */
+    margin: 5px; /* Adjusted for better spacing */
+  }
+}
